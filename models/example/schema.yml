@@ -28,3 +28,8 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: cumulative_purchases
+      description: "the cumulative purchases by date on Snowflake sample order data"
+      columns:
+          - name: o_orderdate
