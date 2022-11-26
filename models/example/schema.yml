@@ -41,3 +41,4 @@ models:
           - name: o_orderdate
 
     - name: incremental_example
+    - name: incremental_time
