@@ -19,3 +19,12 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: customer_purchases
+      description: "the total purchases for each customer in Snowflake sample data"
+      columns:
+          - name: c_custkey
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
