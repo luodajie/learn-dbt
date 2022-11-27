@@ -42,3 +42,15 @@ models:
 
     - name: incremental_example
     - name: incremental_time
+
+    - name: customer
+      columns:
+         - name: c_custkey
+           tests:
+               - unique
+               - not_null
+         - name: c_mktsegment
+           tests:
+               - accepted_values:
+                   values: ["BUILDING", "AUTOMOBILE", "MACHINERY", "HOUSEHOLD", "FURNITURE"]
+
